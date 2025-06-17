@@ -3,12 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página Pessoal</title>
+    <title>Nome da Empresa - Bem-vindo</title>
+
+    <style>
+        /* --- Reset Básico e Estilos Gerais --- */
+        body {
+            font-family: Arial, sans-serif; /* Fonte limpa e profissional */
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Fundo branco */
+            color: #1a1a1a; /* Texto principal (preto suave) */
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1100px;
+            margin: 0 auto; /* Centraliza o conteúdo principal */
+            padding: 20px 0;
+        }
+
+        /* --- Cabeçalho e Navegação --- */
+        .header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0; /* Linha cinza clara para separar */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .nav-menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none; /* Remove bolinhas da lista */
+        }
+
+        .nav-menu li {
+            display: inline;
+            margin-left: 25px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: bold;
+        }
+        
+        /* --- Estilos das Seções --- */
+        section {
+            padding: 60px 0; /* Espaçamento vertical entre as seções */
+        }
+        
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        /* Seção de Destaque (Hero) */
+        .hero {
+            background-color: #1a1a1a; /* Fundo preto */
+            color: #ffffff; /* Texto branco */
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button { /* Botão de "Chamada para Ação" */
+            display: inline-block;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            padding: 12px 25px;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Seção de Serviços */
+        .services-grid {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            gap: 20px; /* Espaço entre os itens */
+        }
+
+        .service-item {
+            border: 1px solid #e0e0e0;
+            padding: 30px;
+            width: 30%;
+            border-radius: 5px;
+        }
+        
+        .service-item h3 {
+            margin-top: 0;
+        }
+
+        /* --- Rodapé --- */
+        .footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo(a) à minha página!</h1>
-    <p>Este é um espaço para eu mostrar meus projetos e ideias.</p>
 
-    <a href="https://github.com/SEU-NOME-DE-USUARIO">Visite meu perfil no GitHub</a>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Nome da Empresa</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>O Futuro do seu Negócio Começa Aqui</h1>
+            <p>Soluções inovadoras para impulsionar seus resultados.</p>
+            <a href="#contact" class="cta-button">Entre em Contato</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>Sobre Nós</h2>
+        <p>
+            Somos uma empresa apaixonada por tecnologia e resultados. Nossa missão é transformar ideias em realidade, oferecendo soluções digitais que agregam valor e resolvem problemas reais. Com uma equipe experiente e dedicada, estamos prontos para enfrentar os desafios do seu projeto e garantir o seu sucesso. Acreditamos na parceria e na transparência como pilares de cada projeto que desenvolvemos.
+        </p>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites e sistemas web modernos, responsivos e otimizados para a sua necessidade.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Marketing Digital</h3>
+                    <p>Estratégias completas para aumentar sua visibilidade online, atrair clientes e gerar vendas.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Consultoria de TI</h3>
+                    <p>Análise e otimização da sua infraestrutura de tecnologia para garantir eficiência e segurança.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contato</h2>
+        <p>Gostaria de saber mais? Envie-nos uma mensagem!</p>
+        <p>
+            <strong>Email:</strong> contato@suaempresa.com.br <br>
+            <strong>Telefone:</strong> (XX) YYYYY-ZZZZ
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Nome da Empresa. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
